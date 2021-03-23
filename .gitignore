@@ -1,0 +1,6 @@
+# gitignore
+
+.vscode
+.DS_Store
+/boxicons-2.0.7
+*.psd

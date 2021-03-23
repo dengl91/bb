@@ -1,0 +1,47 @@
+// 
+// Theme Name: New Clean Template
+// _topbar.sass
+//
+// app/sass/layout/
+//
+
+.topbar
+    height: 46px
+    color: var(--topbar)
+    background: var(--gray__light)
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+    i
+        font-size: 18px
+        color: var(--gray)
+        &.bxs-map-pin
+            margin: 0 4px 0 0
+            transform: translateY(2px)
+    &__center
+        display: flex
+        align-items: center
+        span
+            margin: 0 10px
+
+.social
+    display: flex
+    align-items: center
+    &__item
+        width: 20px
+        height: 20px
+        background-repeat: no-repeat
+        background-position: 50%
+        background-size: contain
+        margin: 0 0 0 15px
+        &.telegram
+            background-image: url(../img/social/telegram.svg)
+        &.vk
+            background-image: url(../img/social/vk.svg)
+        &.viber
+            background-image: url(../img/social/viber.svg)
+        &.instagram
+            background-image: url(../img/social/instagram.svg)
+        &.whatsapp
+            background-image: url(../img/social/whatsapp.svg)
