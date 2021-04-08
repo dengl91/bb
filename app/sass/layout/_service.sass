@@ -1,0 +1,35 @@
+// 
+// Theme Name: New Clean Template
+// _service.sass
+//
+// app/sass/layout/
+//
+
+.service
+    &__item
+        border-radius: 10px
+        padding: 7rem 1.8rem 1.8rem 1.8rem
+        margin: 0 0 40px 0
+        position: relative
+        overflow: hidden
+        &::after
+            content: ''
+            width: 180px
+            height: 180px
+            background: #000
+            border-radius: 50%
+            position: absolute
+            top: -42px
+            right: -42px
+            mix-blend-mode: overlay
+    &__title
+        font-size: 1.5rem
+        font-weight: 600
+        margin: 0 0 1rem 0
+    &__description
+        color: var(--text)
+    &__icon
+        position: absolute
+        top: 1.8rem
+        right: 1.8rem
+        z-index: 1

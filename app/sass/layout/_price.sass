@@ -1,0 +1,101 @@
+// 
+// Theme Name: New Clean Template
+// _price.sass
+//
+// app/sass/layout/
+//
+
+.price
+    h2
+        text-align-last: left
+        a
+            font-size: 1rem
+            color: var(--gray)
+            font-weight: 400
+            margin: 0 0 0 0.5rem
+    &__content
+        font-size: 1.1rem
+        border: 1px solid var(--gray__light)
+        border-radius: 10px
+        overflow: hidden
+    &__row
+        display: flex
+        &:nth-child(2n)
+            background: #f5f6f9
+    &__cell
+        border-right: 1px solid var(--gray__light)
+        border-bottom: 1px solid var(--gray__light)
+        display: flex
+        flex: 1 1 0
+        align-items: center
+        padding: 1rem 1.8rem
+        &:first-child
+            flex: 3 1 0
+        &:last-child
+            flex-grow: unset
+            border-right: none
+        :last-child > &
+            border-bottom: none
+        &--price
+            font-size: 1.5rem
+            font-weight: 600
+            justify-content: center
+        &--btn
+            display: flex
+            position: relative
+    &__btn
+        line-height: 58px
+        border: 1px solid var(--main)
+        border-radius: 10px
+        padding: 0 34px
+        margin: 10px 0
+        cursor: pointer
+    &__hint
+        display: flex
+        margin: 2rem 0
+        span
+            color: var(--gray)
+            line-height: 38px
+            background: var(--orage__blend)
+            border-radius: 10px
+            padding: 0 1.8rem
+            margin: 0 1rem 0 0
+        a
+            color: var(--main)
+            text-decoration: underline
+            text-decoration-style: dashed
+            text-underline-position: under
+            line-height: 38px
+        i
+            margin: 0 0.4rem 0 0
+
+.hint
+    margin: 0 0 0 10px
+    position: relative
+    &__dropdown
+        width: 64px
+        height: 58px
+        background: url(../img/dropdown__white.svg) no-repeat 50% var(--main)
+        border-radius: 10px
+        margin: 10px 0
+        cursor: pointer
+    &__content
+        width: 260px
+        font-size: 1rem
+        color: var(--gray)
+        line-height: 1.4rem
+        background: #fff
+        border: 1px solid var(--gray__light)
+        border-radius: 8px
+        padding: 1.4rem
+        display: none
+        position: absolute
+        right: 0
+        top: 100%
+        z-index: 1
+        pointer-events: none
+        :hover > &
+            display: block
+    i
+        color: var(--main)
+        margin: 0 8px 0 0
